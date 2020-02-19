@@ -7,31 +7,11 @@
 
 ![C++ master race](assets/gcc.png?raw=true "gcc")
 
-C++ Header only library with usefull methods for statistics, computational geometry, machine learning, algorithms and stuff like that, is intended to be for my own use but not limited to that, if there is something usefull to you please feel free to use it.
+C++ Header-only library with usefull methods for statistics, computational geometry, machine learning, algorithms and stuff like that, is intended to be for my own use but not limited to that, if there is something usefull to you please feel free to use it.
+
+I decided to make it Header-only because I'm not expecting that it gets used in any project where this could be a disadvantage, if I put enough work in this I'll consider into using other more efficient method.
 
 Examples of usage can be found in [CPP-Snippets](https://github.com/lgruelas/Cpp-snippets) repo.
-
-## Table of contents
-
-- [LGeometric](#lgeometric)
-  - [Table of contents](#table-of-contents)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installing](#installing)
-    - [Usage](#usage)
-    - [Unittest](#unittest)
-  - [Built With](#built-with)
-  - [Authors](#authors)
-  - [License](#license)
-  - [Project Status](#project-status)
-  - [List of algorithms](#list-of-algorithms)
-
-    - [Built With](#built-with)
-    - [Authors](#authors)
-    - [License](#license)
-    - [Project Status](#project-status)
-    - [List of algorithms](#list-of-algorithms)
-      - [Computational geometry](#computational-geometry)
 
 ## Getting Started
 
@@ -50,8 +30,15 @@ This project is mantained with `Cmake` so it should be as easy as doing:
 ### Usage
 
 ### Unittest
-The unit test are working with the GoogleTest Framewokr, to run them you should use:
-
+The unit test are working with the GoogleTest Framewokr, to build them you should use:
+````bash
+    rm -rf build
+    mkdir build && cd build
+    cmake -DBUILD_TESTS=ON ..
+```
+And then to run them you should use:
+```bash
+````
 
 ## Built With
 
