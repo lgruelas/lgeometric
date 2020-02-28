@@ -30,15 +30,17 @@ This project is mantained with `Cmake` so it should be as easy as doing:
 ### Usage
 
 ### Unittest
-The unit test are working with the GoogleTest Framewokr, to build them you should use:
-````bash
+The unit test are working with the GoogleTest Framework, to build them you should use:
+```bash
     rm -rf build
     mkdir build && cd build
     cmake -DBUILD_TESTS=ON ..
+    make all
 ```
 And then to run them you should use:
 ```bash
-````
+  ./tests/lgeometric_tst
+```
 
 ## Built With
 
