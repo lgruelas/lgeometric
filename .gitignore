@@ -16,6 +16,9 @@ build*
 *CMakeFiles*
 Makefile
 
+aux.sh
+.*.swp
+
 # Unittest
 googletest/
 
