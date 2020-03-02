@@ -6,11 +6,12 @@ namespace lgeometric {
     template <class T>
     class Point2D {
         public:
-            Point2D(T x, T y): x(x), y(y) { }
-            int getY() {
+            Point2D() = default;
+            Point2D(T X, T Y): x(X), y(Y) { }
+            T const getY() const {
                 return y;
             }
-            int getX() {
+            T const getX() const {
                 return x;
             }
         private:
